@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <section id="banner">
+        <img src="https://www.citypng.com/public/uploads/preview/-41603133143nmjvvcprnn.png?v=2023051008"  class="logo">
+        <div class="banner-text">
+            <p>A 5v5 character-based tactical shooter</p>
+            <br><br><br>
+            <h1>Valorant</h1>
+            <div class="banner_button">
+                <a href="#" ><span></span>PLAY FREE</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOGIN  </a></li>
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#">CONATACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menubtn">
+            <img src="menu.png" id="menu">
+    </div><br><br>
+<section id="feature">
+    <div class="title-text">
+        <p>WE ARE VALORANT</p><br><br><br>
+        <h1>DEFY THE LIMITS</h1>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+            <h1>YOUR AGENTS</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </div>
+                <div class="features-text">
+                    <p>More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="https://firstsportz.com/wp-content/uploads/2023/01/Brimstone-Breach-Sage-Raze-and-Reyna-1024x576.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav= document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right="-250px";
+            menubtn.onclick= function() {
+                if ( sideNav.style.right=="-250px"){
+                    sideNav.style.right="0";
+                    menu.src ="cancel.png";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                    menu.src ="menu.png";
+
+                }
+            }
+    </script>
+
+
+</body>
+</html>
